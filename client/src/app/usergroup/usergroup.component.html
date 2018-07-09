@@ -1,0 +1,23 @@
+<div class="container"  style="margin-top: 5rem">
+  <div class="row">
+    <div class="col-md-4">
+    <form>
+      <div class="form-group">
+        <h5>Create Group</h5>
+        <input name="g" type="text" class="form-control" placeholder="Create group" [(ngModel)]="gname">
+      </div>
+      <button type="submit" class="btn" style="color: white;background-color: limegreen" (click)="create_group()">Create</button>
+    </form>
+</div>
+
+  <div class="col-md-4" style="margin-top: 3rem;">
+     <button class="btn btn-warning" style="color:white" (click)="tochat()">Start Chat</button>
+  </div>
+
+</div>
+</div>
+
+<div class="col-md-3" style="margin-top: 3rem">
+  <h4>Available Groups</h4>
+  <h5 *ngFor="let n of gp_name">{{n.grpname}}</h5>
+</div>

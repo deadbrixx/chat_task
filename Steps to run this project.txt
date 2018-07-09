@@ -1,0 +1,6 @@
+1 - cd client 
+2 - npm install
+3 - ng serve --proxy-config proxy_server.json (i am using proxy server)
+4 - cd server
+5 - npm install
+6 - nodemon or node server.js
